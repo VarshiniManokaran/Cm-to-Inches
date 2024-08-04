@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link src="style"
+    
+</head>
+    <center>
+    <h1 class="varshu">Length converter</h1>
+    </center>
+    <center>
+
+<body id=box style="background-color: pink;"></body>
+
+
+<style>
+    .varshu{
+        color:brown;
+    }
+    
+
+
+
+    #box{
+        width:300px;
+        height:400px;
+        background-color: black;
+        border:2px;
+        padding:10px;
+        margin: 20px;
+        box-shadow: 5px 5px 10px  10px black;}
+     
+        #var{
+            color:blueviolet;
+
+        }
+        #call{
+            color: aqua;
+        }
+    </style>
+        
+        
+
+
+
+
+    
+  <center>
+    <div id="wrapper"></div>
+        <h2>cm to inches</h2>
+    
+        
+        <div class="inputdiv">
+            <input type="text" id="input" id="my-button"placeholder="Length in cm">
+        </div>
+        <div>
+            <button id="var"type="submit" onclick="Convert()">Convert to inches</button>
+        </div>
+        <div id="Result">
+
+            
+        </div>
+        
+    </center>
+    <script>
+        function Convert(){
+        let cmVal = Number(document.getElementById("input").value)
+        let inchVal = cmVal/2.54
+        let result = document.getElementById("Result")
+        result.innerHTML = inchVal
+        }
+
+    </script>
+    </center>
+   
+    
+</body>
+</html>
